@@ -1,0 +1,6 @@
+{
+  "name": "BeautyQueen Saloon",
+  "description": "پلتفرم خدمات آرایشی و زیبایی بیوتی‌کوئین - ارائه دهنده مدرن‌ترین خدمات حوزه زیبایی",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
