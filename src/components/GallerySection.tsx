@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Eye, Scissors, Heart, Palette } from 'lucide-react';
+import { images } from '../assets/images';
 
 export default function GallerySection() {
   const [activeFilter, setActiveFilter] = useState<'all' | 'hair' | 'makeup' | 'nail'>('all');
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isSliding, setIsSliding] = useState(false);
 
-  // Before/After pictures (using high quality, high-compatibility Picsum placeholders carefully selected)
-  const beforeImg = "https://picsum.photos/seed/before_hair/800/500?blur=1";
-  const afterImg = "https://picsum.photos/seed/after_hair/800/500";
+  const beforeImg = images.img5;
+  const afterImg = images.img1;
 
   const portfolioItems = [
     {
@@ -17,42 +17,42 @@ export default function GallerySection() {
       category: 'hair',
       title: 'بالیاژ رویال شنی دودی',
       desc: 'اجرا شده توسط مریم حسینی بر روی پایه دکلره ۹ بدون هیچ‌گونه سوختگی ساقه مو',
-      image: 'https://picsum.photos/seed/hair1/500/400'
+      image: images.img2
     },
     {
       id: 2,
       category: 'makeup',
       title: 'گریم VIP مونوکروم لایت عروس',
       desc: 'میکاپ اروپایی مات با ماندگاری ۲۴ ساعته و مژه‌های ابریشمی مجزا',
-      image: 'https://picsum.photos/seed/makeup1/500/400'
+      image: images.img13
     },
     {
       id: 3,
       category: 'nail',
       title: 'طراحی بی نظیر لایه‌ای ژل ناخن',
       desc: 'کاشت کوتاه فرم گلدانی با شوگر بیوتی و فرنچ ظریف کلاسیک صورتی',
-      image: 'https://picsum.photos/seed/nails1/500/400'
+      image: images.img6
     },
     {
       id: 4,
       category: 'hair',
       title: 'کات شگی مجلسی فرانسوی',
       desc: 'مدل موی ترند به همراه براشینگ حرارتی حجم‌دهنده مراجع',
-      image: 'https://picsum.photos/seed/hair2/500/400'
+      image: images.img7
     },
     {
       id: 5,
       category: 'makeup',
       title: 'میکاپ کلاسیک رژ لب قرمز مخملی',
       desc: 'خط چشم گربه‌ای عمیق با گریم سه بعدی استخوان گونه و فک',
-      image: 'https://picsum.photos/seed/makeup2/500/400'
+      image: images.img11
     },
     {
       id: 6,
       category: 'nail',
       title: 'مانیکور روسی و ژلیش کهکشانی',
       desc: 'کاشت لمینت طبیعی با افکت مگنتی سه‌بعدی چشم گربه‌ای جذاب',
-      image: 'https://picsum.photos/seed/nails2/500/400'
+      image: images.img8
     },
   ];
 

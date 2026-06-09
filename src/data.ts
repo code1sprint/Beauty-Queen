@@ -1,4 +1,5 @@
 import { Service, Staff, BlogPost, Review } from './types';
+import { images } from './assets/images';
 
 export const SERVICES: Service[] = [
   // Hair Services
@@ -171,7 +172,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '۱۸ خرداد ۱۴۰۵',
     readTime: '۵ دقیقه مطالعه',
     author: 'الناز کریمی',
-    image: 'https://picsum.photos/seed/makeup_blog/600/400'
+    image: images.img12
   },
   {
     id: 'b2',
@@ -182,7 +183,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '۱۲ خرداد ۱۴۰۵',
     readTime: '۷ دقیقه مطالعه',
     author: 'مریم حسینی',
-    image: 'https://picsum.photos/seed/hair_blog/600/400'
+    image: images.img9
   },
   {
     id: 'b3',
@@ -193,7 +194,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '۵ خرداد ۱۴۰۵',
     readTime: '۴ دقیقه مطالعه',
     author: 'مهسا ظریف',
-    image: 'https://picsum.photos/seed/skin_blog/600/400'
+    image: images.img10
   }
 ];
 

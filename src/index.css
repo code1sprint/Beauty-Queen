@@ -35,3 +35,45 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-brand-berry);
 }
+
+/* ── Hero custom utilities ── */
+.hero-dot-grid {
+  background-image: radial-gradient(circle, #9E3B5412 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(135deg, #9E3B54 0%, #D4AF37 50%, #9E3B54 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero-gradient-shift 6s ease infinite;
+}
+
+@keyframes hero-gradient-shift {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+.hero-arch-mask {
+  aspect-ratio: 3 / 4;
+  border-radius: 50% 50% 45% 45% / 12% 12% 88% 88%;
+  border: 3px solid color-mix(in srgb, var(--color-brand-gold) 40%, transparent);
+}
+
+.hero-shimmer {
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: hero-shimmer 2s ease infinite;
+}
+
+@keyframes hero-shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
